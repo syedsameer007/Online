@@ -1,0 +1,65 @@
+.login-popup{
+    position: absolute;
+    z-index: 1;/*issey jo landscape wala vegetable picture hai na voh dimm hogaya hai*/
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.login-popup-container{
+    place-self: center;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+   }
+.login-popup-title{/*issey cross right top corner mey ayega*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.login-popup-title img{/*voh cross icon ko cursor lagaru*/
+    width: 16px;
+    cursor: pointer;
+}
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*imp iski wajha se hi gap araha hai boxes ke beech*/
+}
+.login-popup-inputs input{/*isey jo your name,email etc.. hai voh acha dikhega*/
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.login-popup-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+.login-popup-condition{/*create account button ke neeche jo hai i agree karke uske liye hai*/
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-popup-condition input{/*yeh checkbox ke liye lagega*/
+    margin-top: 5px;
+}
+.login-popup p span{/*issey click here or login here wale words highlight honge red color se*/
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
